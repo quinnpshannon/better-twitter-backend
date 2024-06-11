@@ -76,7 +76,3 @@ router.put("/:id", async (req, res) => {
 });
 
 export default router;
-
-import express from "express";
-import User from "../models/User.js";
-import Tweet from "../models/Tweet.js";
