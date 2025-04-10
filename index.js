@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', async (req, res) => {
-    pressureData = await req.body
+    let pressureData = await req.body
     console.log(await pressureData)
     res.send('Welcome to the API!')
 })
