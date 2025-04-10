@@ -18,7 +18,12 @@ app.use(express.json());
 app.use('/tweets',tweetsRouter);
 
 app.get('/', (req, res) => {
-    console.log(req.body)
+    res.send('Welcome to the API!')
+})
+
+app.post('/', async (req, res) => {
+    pressureData = await req.body
+    console.log(await pressureData)
     res.send('Welcome to the API!')
 })
 
