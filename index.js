@@ -18,7 +18,7 @@ app.use(express.json());
 app.use('/tweets',tweetsRouter);
 
 app.get('/', (req, res) => {
-    res.send('Welcome to the API!')
+    res.status(200).send('Welcome to the API!')
 })
 
 app.post('/', async (req, res) => {
