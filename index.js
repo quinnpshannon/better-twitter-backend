@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 app.post('/', async (req, res) => {
     let pressureData = await req.body
     console.log(await pressureData)
-    res.send('Welcome to the API!')
+    res.send('Welcome to the API!',200)
 })
 
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`))
